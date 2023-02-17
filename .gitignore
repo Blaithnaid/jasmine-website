@@ -1,0 +1,3 @@
+# these files will not be pushed to the repository changes are made
+.DS_Store
+.DS_Store*
