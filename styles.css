@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Oswald:wght@600;700&display=swap');
+
 :root {
     --puce_pink: #D8839E;
     --gunmental: #212A30;
     --honolulu_blue: #197BBD;
     --floral_white: #FEF8EC;
+}
+
+header li {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    display: inline;
+    margin: 4px 10px;
+}
+
+header p {
+    display: inlne;
+    /* font-size: ; */
+}
+
+body {
+    background-color: var(--floral_white);
+
 }
