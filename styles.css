@@ -88,3 +88,56 @@ body {
     align-items: center;
     padding: 20px;
   }
+
+  img {
+    width: 250px;
+    object-fit:cover;
+  }
+
+  /* contact us page */
+
+  .container{
+    width: 80%;
+    margin: 60px auto;
+    justify-content: space-between;
+}
+.contact-box{
+    display:flex;
+    background: #FEF8EC;
+}
+.box-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.box-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #d8839e;
+    color: #fff;
+}
+.row .input-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: vertical;
+}
+
+input[type=submit]:hover {
+    background-color: #000;
+    color:#fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer{
+    background-color: #fff;
+    
+}
+
