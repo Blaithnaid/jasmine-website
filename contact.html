@@ -9,17 +9,14 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-             <h1>Jasmine Jewellery</h1>
-            </div>
-
+			<img src="img/logo.png" width="50" height="50">
+            <p><b>Jasmine</b></p>
             <ul>
-		      <li><a href="#">Home</a></li>
-		        <li><a href="#">Shop</a></li>
-		        <li><a href="#">About Us</a></li>
-		        <li><a href="#">Contact</a></li>
-			</ul>
-
+                <a href="index.html" id="currentPage"><li>Home</li></a>
+                <a href="shop.html"><li>Shop</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="aboutus.html"><li>About Us</li></a>
+            </ul>
         </header>
         <div class ="container">
             <h1>Need more assistance? Let us know! </h1>
@@ -29,7 +26,17 @@
                 <div class="box-left">
                     <h3>Send your request</h3>
 
-                       <form>
+                    <form>
+                    <div class="form-group">
+                        <label for="inputName">Your Name</label>
+                        <input type="text" placeholder="Jane Doe">
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="123 456 789">
+                        </div>
+                    </div>
                         <div class="row">
                             <div class="input-group">
                                 <label>Your Name</label>
@@ -37,36 +44,36 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-group">
-                                <label>Phone</label>
-                                <input type="text" placeholder="123 456 789">
-                            </div>
-                        </div>
-                            <div class="row">
                                 <div class="input-group">
-                                    <label>Your Name</label>
-                                    <input type="text" placeholder="Jane Doe">
-                                </div>
-                            </div>
-                          <div class="row">
-                                 <div class="input-group">
-                                     <label>Subject</label>
-                                     <textarea id="Subject" name="Subject" placeholder="Let us know" style="height:20px"></textarea>
+                                    <label>Subject</label>
+                                    <textarea id="Subject" name="Subject" placeholder="Let us know" style="height:20px"></textarea>
 
-                                     <input type="submit" value="submit">
-                                 </div>                            
-                            </div>
-                        
-                        
-
-                    </form>
+                                    <input type="submit" value="submit">
+                                </div>                            
+                        </div>
+                </form>
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
                    
             </div>
             <div class="box-right">
                 <h3>Reach Us Here</h3>
             </div>
         </div>
-
         <footer>
             <p>&copy; 2023 Jasmine Jewelry Shop. All rights reserved.</p>
         </footer>

@@ -2,33 +2,58 @@
 
 :root {
     --puce_pink: #D8839E;
-    --gunmental: #212A30;
+    --gunmetal: #212A30;
     --honolulu_blue: #197BBD;
     --floral_white: #FEF8EC;
 }
 
+/* header styling */
+header {
+    padding: 10px;
+    background-color: var(--gunmetal);
+    display: flex;
+    align-items: center;
+}
+header * {
+    display: inline;
+}
+header a:link {
+    color: white;
+}
+header a:visited {
+    color: white;
+}
+header #currentPage {
+    color: var(--honolulu_blue);
+}
 header li {
     font-family: 'Lora', serif;
     font-weight: 400;
-    display: inline;
     margin: 4px 10px;
 }
-
 header p {
-    display: inlne;
-    /* font-size: ; */
+    font-size: larger;
+    color: white;
+    font-family: 'Lora', sans-serif;
+    /* font-weight: 600; */
 }
+header img {
+    height: 45px;
+    width: 45px;
+}
+
+
 
 body {
     background-color: var(--floral_white);
 
 }
 
+
 .btn:hover {
     background-color: #212A30;
     color: #fff;
 }
-lalalala
 .btn{
     display: inline-block;
     padding: 10px 20px;
@@ -39,7 +64,7 @@ lalalala
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* products section stlying home page*/
+/* products section styling home page*/
 
 .products {
     padding: 40px;
