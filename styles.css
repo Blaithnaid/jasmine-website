@@ -35,11 +35,15 @@ body {
     border-radius: 5px;
     background-color: #fff;
     color: #212A30;
-    text-decoration: none;
+    text-decoration:underline;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* products section stlying home page*/
+
+.search {
+    float: right;
+}
 
 .products {
     padding: 40px;
@@ -66,7 +70,7 @@ body {
 
   img {
     width: 250px;
-    object-fit:cover;
+    object-fit: cover;
   }
 
   /* contact us page */
