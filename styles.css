@@ -66,6 +66,16 @@ body {
 
 /* products section styling home page*/
 
+#discount {
+    display: flex;
+    background-color: darkgray;
+    
+}
+#display p {
+    margin: auto;
+    width: 50%
+}
+
 .search {
     float: right;
 }
