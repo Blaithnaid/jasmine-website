@@ -69,11 +69,11 @@ body {
 #discount {
     display: flex;
     background-color: darkgray;
-    
-}
-#display p {
+    }
+
+#discount p {
     margin: auto;
-    width: 50%
+    width: 50%;
 }
 
 .search {
@@ -84,6 +84,16 @@ body {
     width: auto;
     height: 29px;
 }
+
+.homepage-content h2 {
+    text-align: center;
+}
+
+.homepage-content p {
+    text-align: center;
+}
+
+ /* products section */ 
 
 .products {
     padding: 40px;
