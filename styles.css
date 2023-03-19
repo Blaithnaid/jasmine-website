@@ -42,14 +42,12 @@ header img {
     width: 45px;
 }
 
-
-
+/* cross-page styling */
 body {
     background-color: var(--floral_white);
-
 }
-
-
+   
+/* products section styling home page*/
 .btn:hover {
     background-color: #212A30;
     color: #fff;
@@ -63,17 +61,14 @@ body {
     text-decoration:underline;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
-/* products section styling home page*/
-
 #discount {
     display: flex;
     background-color: darkgray;
-    }
-
+}
 #discount p {
     margin: auto;
     width: 50%;
+    text-align: center;
 }
 
 .search {
@@ -101,13 +96,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-  .products h2 {
+}
+.products h2 {
     font-size: 36px;
     margin-bottom: 40px;
-  }
+}
 
-  .product-card {
+.product-card {
     background-color: #fff;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     width: 300px;
@@ -116,16 +111,19 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  }
-
-  img {
-    width: 250px;
-    object-fit: cover;
-  }
+}
+.categories {
+    display: flex;
+    flex-direction: row;
+}
+.category {
+    flex-grow: 1;
+    size: 100px;
+}
 
   /* contact us page */
 
-  .container{
+.container{
     width: 80%;
     margin: 60px auto;
     justify-content: space-between;
