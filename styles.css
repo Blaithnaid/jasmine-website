@@ -61,18 +61,32 @@ body {
     text-decoration:underline;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-#discount {
+
+/* header containers & animation */ 
+
+.w3-container {
     display: flex;
-    background-color: darkgray;
+    background-color: #44545F;
+    
 }
-#discount p {
+.w3-container p {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.w3-container2 {
+    display: flex;
+    background-color: #44545F;
+}
+.w3-container2 p {
     margin: auto;
     width: 50%;
     text-align: center;
 }
 
 .search {
-    float: right;
+   float: right;
 }
 
 #country {
