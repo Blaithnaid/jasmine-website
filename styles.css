@@ -7,6 +7,7 @@
     --floral_white: #FEF8EC;
 }
 
+
 /* header styling */
 header {
     padding: 10px;
@@ -61,6 +62,42 @@ body {
     text-decoration:underline;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+/* newsletter to insert email */
+
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: floralwhite;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color:#D8839E;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
 
 /* header containers & animation */ 
 
@@ -146,6 +183,24 @@ body {
 /* .categories img {
     
 } */
+
+ /* footers and banners */
+
+ .banner-categories {
+    background-color: #212A30;
+    color: #fff;
+    height: 60px;
+    align-content: center;
+ }
+
+.info {
+    background-color: #44545F;
+    color: #fff;
+}
+
+.info p {
+    background-color: #212A30;
+}
 
   /* contact us page */
 
