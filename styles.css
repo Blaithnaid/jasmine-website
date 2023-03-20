@@ -176,16 +176,30 @@ form {
     padding: 20px;
 }
 .categories {
-    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
     flex-direction: row;
 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categories a {
+    width: 30%;
+    /* height: fit-content; */
 }
 .categories img {
     width: 30%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    /* width: 30%; */
+    height: fit-content;
 }
+/* .categories img {
+    
+} */
 
  /* footers and banners */
 
