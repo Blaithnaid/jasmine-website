@@ -113,12 +113,12 @@ body {
     padding: 20px;
 }
 .categories {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
 }
-.category {
-    flex-grow: 1;
-    size: 100px;
+.categories img {
+    width: 30%;
+    height: auto;
 }
 
   /* contact us page */
