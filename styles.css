@@ -47,6 +47,10 @@ header img {
 body {
     background-color: var(--floral_white);
 }
+
+
+/* PRODUCTS SECTION!!! */
+
    
 /* products section styling home page*/
 .btn:hover {
@@ -63,11 +67,15 @@ body {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.btnshopnow {
+    
+}
+
 /* newsletter to insert email */
 
 form {
     border: 3px solid #f1f1f1;
-    font-family: Arial;
+    font-family: 'Lora', serif;
   }
   
   .container {
@@ -82,6 +90,10 @@ form {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+  }
+
+  .input[type=text] {
+    color: #212A30;
   }
   
   input[type=checkbox] {
@@ -166,10 +178,13 @@ form {
 .categories {
     /* display: flex; */
     flex-direction: row;
+
 }
 .categories img {
     width: 30%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
  /* footers and banners */
