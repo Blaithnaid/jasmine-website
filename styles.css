@@ -205,6 +205,9 @@ form {
     height: 60px;
     align-content: center;
  }
+ .banner-categories * {
+    margin: 0 auto;
+ }
 
 .info {
     background-color: #44545F;
