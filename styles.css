@@ -219,7 +219,7 @@ form {
     background-color: #212A30;
 }
 
-  /* contact us page */
+  /* CONTACT PAGE!!! */
 
 .container{
     width: 80%;
@@ -233,6 +233,7 @@ form {
 .box-left{
     flex-basis: 60%;
     padding: 40px 60px;
+
 }
 
 .box-right{
