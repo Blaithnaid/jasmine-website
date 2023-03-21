@@ -22,16 +22,18 @@
 					<input type="text" placeholder="Search for items ...">
 				</div>
 
-				<select name="country" id="country">
-					<option value="Region">Region</option>
-					<option value="United Kingdom">United Kingdom</option>
-					<option value="Ireland">Ireland</option>
-					<option value="Europe">Europe</option>
-					<option value="North America">North America</option>
-				</select>
+				<label for="country">Region</label>
+					<select name="country" id="country">
+						<option value="Region">Region</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="Ireland">Ireland</option>
+						<option value="Europe">Europe</option>
+						<option value="North America">North America</option>
+					</select>
             </ul>
         </header>
-		<header id="ad">
+
+		<header>
 			<div class="w3-container w3-center w3-animate-left">
 				<p>New here? Get 15% off your first order with code: Jasmine235</p>
 			  </div>
@@ -42,8 +44,11 @@
 		</header>
         
 		<section class="homepage">
-			<h2>Discover your perfect jewelry piece</h2>
-			<p>Shop our latest collection of necklaces, bracelets, and earrings.</p>
+			<div class="homepage-content">
+				<h2>Discover your perfect jewelry piece</h2>
+				<p>Shop our latest collection of necklaces, bracelets, and earrings.</p>
+				<a href="#" class="btnshopnow">Shop Now</a>
+			</div>
 		</section>
         <section class="categories">
 			<a href=""><img src="img/bracelet-banner.png" alt=""></a>
@@ -56,6 +61,28 @@
 		<footer class="banner-categories">
 			<p>Over 50 different items!</p>
 		</footer>
+		<br>
+		<br>
+
+		<!-- <section class="products">
+			<h2>Shop By</h2>
+			<div class="product-card">
+				<img src="img/necklace.jpeg" alt="Product 1">
+				<h3>Necklaces</h3>
+				<a href="#" class="btn">Shop Now</a>
+			</div>
+			<div class="product-card">
+				<img src="img/bracelet.jpeg" alt="Product 2">
+				<h3>Bracelets</h3>
+				<a href="#" class="btn">Shop Now</a>
+			</div>
+			<div class="product-card">
+				<img src="img/earrings.jpg" alt="Product 3">
+				<h3>Earrings</h3>
+				<a href="#" class="btn">Shop Now</a>
+			</div>
+		</section> -->
+
 	<footer>
 		<div class="info">
 			<ol>
@@ -76,7 +103,7 @@
 					  <input type="text" placeholder="Name" name="name" required>
 					  <input type="text" placeholder="Email address" name="mail" required>
 					  <label>
-						<input type="checkbox" id="checkbox" name="subscribe"> Remeber me?
+						<input type="checkbox" id="checkbox" checked="checked" name="subscribe"> Remeber me?
 					  </label>
 					</div>
 				  
