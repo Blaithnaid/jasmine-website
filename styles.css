@@ -84,6 +84,10 @@ form {
     padding: 20px;
     background-color: floralwhite;
   }
+
+  .container h2 {
+    text-align: center;
+  }
   
   input[type=text], input[type=submit] {
     width: 100%;
@@ -216,6 +220,10 @@ form {
 
 .info p {
     background-color: #212A30;
+}
+
+.checkbox {
+    color: #212A30;
 }
 
   /* CONTACT PAGE!!! */
