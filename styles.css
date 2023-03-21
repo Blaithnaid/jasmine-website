@@ -233,7 +233,7 @@ form {
 .box-left{
     flex-basis: 60%;
     padding: 40px 60px;
-    min-height: ;
+    min-height: auto;
 }
 
 .box-right{
