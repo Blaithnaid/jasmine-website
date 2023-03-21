@@ -5,8 +5,8 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jasmine | Home</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
         <header>
@@ -22,18 +22,16 @@
 					<input type="text" placeholder="Search for items ...">
 				</div>
 
-				<label for="country">Region</label>
-					<select name="country" id="country">
-						<option value="Region">Region</option>
-						<option value="United Kingdom">United Kingdom</option>
-						<option value="Ireland">Ireland</option>
-						<option value="Europe">Europe</option>
-						<option value="North America">North America</option>
-					</select>
+				<select name="country" id="country">
+					<option value="Region">Region</option>
+					<option value="United Kingdom">United Kingdom</option>
+					<option value="Ireland">Ireland</option>
+					<option value="Europe">Europe</option>
+					<option value="North America">North America</option>
+				</select>
             </ul>
         </header>
-
-		<header>
+		<header id="ad">
 			<div class="w3-container w3-center w3-animate-left">
 				<p>New here? Get 15% off your first order with code: Jasmine235</p>
 			  </div>
@@ -44,11 +42,8 @@
 		</header>
         
 		<section class="homepage">
-			<div class="homepage-content">
-				<h2>Discover your perfect jewelry piece</h2>
-				<p>Shop our latest collection of necklaces, bracelets, and earrings.</p>
-				<a href="#" class="btn">Shop Now</a>
-			</div>
+			<h2>Discover your perfect jewelry piece</h2>
+			<p>Shop our latest collection of necklaces, bracelets, and earrings.</p>
 		</section>
         <section class="categories">
 			<a href=""><img src="img/bracelet-banner.png" alt=""></a>
@@ -61,28 +56,6 @@
 		<footer class="banner-categories">
 			<p>Over 50 different items!</p>
 		</footer>
-		<br>
-		<br>
-
-		<!-- <section class="products">
-			<h2>Shop By</h2>
-			<div class="product-card">
-				<img src="img/necklace.jpeg" alt="Product 1">
-				<h3>Necklaces</h3>
-				<a href="#" class="btn">Shop Now</a>
-			</div>
-			<div class="product-card">
-				<img src="img/bracelet.jpeg" alt="Product 2">
-				<h3>Bracelets</h3>
-				<a href="#" class="btn">Shop Now</a>
-			</div>
-			<div class="product-card">
-				<img src="img/earrings.jpg" alt="Product 3">
-				<h3>Earrings</h3>
-				<a href="#" class="btn">Shop Now</a>
-			</div>
-		</section> -->
-
 	<footer>
 		<div class="info">
 			<ol>
@@ -103,7 +76,7 @@
 					  <input type="text" placeholder="Name" name="name" required>
 					  <input type="text" placeholder="Email address" name="mail" required>
 					  <label>
-						<input type="checkbox" id="checkbox" checked="checked" name="subscribe"> Remeber me?
+						<input type="checkbox" id="checkbox" name="subscribe"> Remeber me?
 					  </label>
 					</div>
 				  

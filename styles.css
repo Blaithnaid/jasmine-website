@@ -36,11 +36,13 @@ header p {
     font-size: larger;
     color: white;
     font-family: 'Lora', sans-serif;
-    /* font-weight: 600; */
 }
 header img {
     height: 45px;
     width: 45px;
+}
+#ad {
+    padding: 0px;
 }
 
 /* cross-page styling */
@@ -78,7 +80,7 @@ form {
   input[type=text], input[type=submit] {
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
+    margin: 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -125,17 +127,16 @@ form {
 .search {
    float: right;
 }
+.search input {
+    padding: 5px;
+}
 
 #country {
     width: auto;
     height: 29px;
 }
 
-.homepage-content h2 {
-    text-align: center;
-}
-
-.homepage-content p {
+.homepage h2, p {
     text-align: center;
 }
 
@@ -173,12 +174,11 @@ form {
     justify-content: center;
 }
 .categories a {
-    width: 30%;
+    width: auto;
     /* height: fit-content; */
 }
 .categories img {
-    /* width: 30%; */
-    height: fit-content;
+    width: 350px;
 }
 /* .categories img {
     
