@@ -239,16 +239,27 @@ form {
     width: 100%;
     display: flex;
     flex-direction: row;
-
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
+.categories * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin: 0;
+    padding: 0;
+  }
+
 .categories a {
-    width: auto;
-    /* height: fit-content; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
 .categories img {
-    width: 350px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 /* .categories img {
     
