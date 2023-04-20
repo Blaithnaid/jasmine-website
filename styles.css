@@ -97,7 +97,7 @@ img {vertical-align: middle;}
   /* Caption text on the slideshow */
   .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: 20px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -388,4 +388,3 @@ footer{
     background-color: #fff;
     
 }
-
