@@ -25,6 +25,12 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+// homepage newsletter subscribe button alert
+
+function subscribe(){
+  alert("Subscribed!");
+}
+
 
 
 
