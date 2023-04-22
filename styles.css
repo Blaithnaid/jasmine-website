@@ -388,8 +388,17 @@ input[type=submit]:hover {
 }
 
 footer{
-    background-color: #fff;
-    
+  padding: 5px;
+  background-color: var(--gunmetal);
+  height: auto;
+  color: white;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div * {
+  margin: 3px;
 }
 
 
