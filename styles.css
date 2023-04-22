@@ -395,6 +395,7 @@ footer div {
   justify-content: center;
 }
 footer div * {
+  cursor: pointer;
   margin: 3px;
 }
 

@@ -25,6 +25,10 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+function onclickAlert() {
+  alert("This is a placeholder")
+}
+
 // homepage newsletter subscribe button alert
 
 function subscribe(){
