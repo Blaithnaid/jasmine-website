@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jasmine | Cart</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+</head>
+
+<body>
+
+<div id="site">
+	<header>
+		<img src="img/logo.png" width="50" height="50" id="sitelogo" alt="Site logo" onmouseover="logoSpin()" onmouseout="logoStop()">
+		<p><b>Jasmine</b></p>
+		<ul>
+			<a href="index.html" id="currentPage"><li>Home</li></a>
+			<a href="shop.html"><li>Shop</li></a>
+			<a href="contact.html"><li>Contact</li></a>
+			<a href="aboutus.html"><li>About Us</li></a>
+			<select name="country" id="country">
+				<option value="Region">Region</option>
+				<option value="United Kingdom">United Kingdom</option>
+				<option value="Ireland">Ireland</option>
+				<option value="Europe">Europe</option>
+				<option value="North America">North America</option>
+			</select>
+		</ul>
+	</header>
+	<div id="content">
+		<h1>Your Shopping Cart</h1>
+		<form id="shopping-cart" action="cart.html" method="get">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col" colspan="2">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li>
+				<li>
+					<a href="products.html" class="btn">Continue Shopping</a>
+				</li>
+				<li>
+					<a href="checkout.html" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+<footer id="site-info">
+		Copyright &copy; Winery
+	</footer>
+
+</body>
+</html>	
