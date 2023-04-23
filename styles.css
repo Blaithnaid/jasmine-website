@@ -73,29 +73,7 @@ img {vertical-align: middle;}
     height:fit-content;
   }
 
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
 
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
 
   /* Caption text on the slideshow */
   .text {
@@ -138,9 +116,7 @@ img {vertical-align: middle;}
             .prev, .next,.text {font-size: 11px}
           }
 
-  .slideshowtext {
-    
-  }
+ 
 
   .dot {
     cursor: pointer;
@@ -173,10 +149,6 @@ img {vertical-align: middle;}
     color: #212A30;
     text-decoration:underline;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.btnshopnow {
-    
 }
 
 /* newsletter to insert email */
@@ -401,7 +373,7 @@ footer div * {
   margin: 3px;
 }
 
-
+/* contact page end */
 
 
 /* SHOP PAGE STYLING */
@@ -410,8 +382,68 @@ footer div * {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  width: 50%;
+  margin: 0 auto;
 }
+
+.product {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.product-image img {
+  width: 130%;
+  height: auto;
+}
+
+.product-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image:hover .overlay {
+  opacity: 1;
+}
+
+.product-image .overlay img {
+  width: 130%;
+  height: auto;
+  
+}
+
+.add-to-cart {
+  position: absolute;
+  width: 130%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-to-cart:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  cursor: pointer;
+}
+
 
 
 
