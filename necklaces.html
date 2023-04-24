@@ -10,6 +10,61 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.shop.js"></script>
 		<script src="js/logo.js" defer></script>
+
+		<style>
+			/* Convert the unordered list into a flexbox */
+		#products ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		/* Convert the list items into flexboxes */
+		#products ul li {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			width: 300px;
+			height: 450px;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 5px #ccc;
+		}
+		/* Style the product image */
+		#products ul li .product-image {
+			width: 100%;
+			height: 200px;
+			margin-bottom: 10px;
+		
+		}
+		#products ul li .product-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			background-color: #fff;
+		}
+		
+		/* style the navigation links in id=site */
+		#site a {
+			color: #000;
+			text-decoration: none;
+		}
+		#site a:hover {
+			color: #f00;
+		}
+
+		/* add background colour to prduct boxes */
+		#products ul li {
+			background-color: #fff;
+		}
+		</style>
+		
 	</head>
 	<body>
 		<header>
@@ -29,63 +84,80 @@
 				</select>
             </ul>
         </header>
-		<div id="site">
-			<div id="content">
-				<div id="products">
-					<ul>
-						<li>
-							<div class="product-image">
-								<img src="images/wine1.jpg" alt="" />
-							</div>
-							<div class="product-description" data-name="Hello Kitty Necklace" data-price="5">
-								<h3 class="product-name">Hello Kitty Necklace</h3>
-								<p class="product-price">&euro; 5</p>
-								<form class="add-to-cart" action="cart.html" method="get">
-									<div>
-										<label for="qty-1">Quantity</label>
-										<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-									</div>
-									<p><input type="submit" value="Add to cart" class="btn" /></p>
-								</form>
-							</div>
-						</li>
-						<li>
-							<div class="product-image">
-								<img src="images/wine2.jpg" alt="" />
-							</div>
-							<div class="product-description" data-name="Necklace #2" data-price="3">
-								<h3 class="product-name">Necklace #2</h3>
-								<p class="product-price">&euro; 2</p>
-								<form class="add-to-cart" action="cart.html" method="get">
-									<div>
-										<label for="qty-2">Quantity</label>
-										<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-									</div>
-									<p><input type="submit" value="Add to cart" class="btn" /></p>
-								</form>
-							</div>
-						</li>
+		<div id="content">
+			<div id="products">
+				<ul>
+					<li>
+						<div class="product-image">
+							<img src="img/earrings5.jpg" alt="" />
+						</div>
+						<div class="product-description" data-name="Hello Kitty Necklace" data-price="5">
+							<h3 class="product-name">Key Earrings</h3>
+							<p class="product-price">&euro; 5</p>
+							<form class="add-to-cart" action="cart.html" method="get">
+								<div>
+									<label for="qty-1">Quantity</label>
+									<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+								</div>
+								<p><input type="submit" value="Add to cart" class="btn" /></p>
+							</form>
+						</div>
+					</li>
+					<li>
+						<div class="product-image">
+							<img src="img/earrings6.jpg" alt="" />
+						</div>
+						<div class="product-description" data-name="Necklace #2" data-price="3">
+							<h3 class="product-name">Game Controller Earrings</h3>
+							<p class="product-price">&euro; 2</p>
+							<form class="add-to-cart" action="cart.html" method="get">
+								<div>
+									<label for="qty-2">Quantity</label>
+									<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+								</div>
+								<p><input type="submit" value="Add to cart" class="btn" /></p>
+							</form>
+						</div>
+					</li>
 
-						<li>
-							<div class="product-image">
-								<img src="images/wine3.jpg" alt="" />
-							</div>
-							<div class="product-description" data-name="Roadhog" data-price="11">
-								<h3 class="product-name">Necklace #3</h3>
-								<p class="product-price">&euro; 4</p>
-								<form class="add-to-cart" action="cart.html" method="get">
-									<div>
-										<label for="qty-3">Quantity</label>
-										<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
-									</div>
-									<p><input type="submit" value="Add to cart" class="btn" /></p>
-								</form>
-							</div>
-						</li>
-					</ul>
-				</div>
+					<li>
+						<div class="product-image">
+							<img src="img/earrings7.jpg" alt="" />
+						</div>
+						<div class="product-description" data-name="Roadhog" data-price="11">
+							<h3 class="product-name">Turtle Earrings</h3>
+							<p class="product-price">&euro; 4</p>
+							<form class="add-to-cart" action="cart.html" method="get">
+								<div>
+									<label for="qty-3">Quantity</label>
+									<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+								</div>
+								<p><input type="submit" value="Add to cart" class="btn" /></p>
+							</form>
+						</div>
+					</li>
+
+					<li>
+						<div class="product-image">
+							<img src="img/earrings8.jpg" alt="" />
+						</div>
+						<div class="product-description" data-name="Necklace #2" data-price="3">
+							<h3 class="product-name">Sunflower Earrings</h3>
+							<p class="product-price">&euro; 2</p>
+							<form class="add-to-cart" action="cart.html" method="get">
+								<div>
+									<label for="qty-2">Quantity</label>
+									<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+								</div>
+								<p><input type="submit" value="Add to cart" class="btn" /></p>
+							</form>
+						</div>
+					</li>
+
+				</ul>
 			</div>
 		</div>
+	</div>
 		<footer id="site-info">
 				Copyright &copy; Winery
 		</footer>
