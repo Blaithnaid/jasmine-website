@@ -10,6 +10,38 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.shop.js"></script>
 		<script src="js/logo.js" defer></script>
+		<style>
+			/* Convert the unordered list into a flexbox */
+			#products ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			/* Convert the list items into flexboxes */
+			#products ul li {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				width: 300px;
+				height: 400px;
+				margin: 10px;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-shadow: 0 0 5px #ccc;
+			}
+			/* Style the product image */
+			#products ul li .product-image {
+				width: 100%;
+				height: 200px;
+				margin-bottom: 10px;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
