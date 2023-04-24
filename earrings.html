@@ -28,7 +28,7 @@
 				justify-content: space-between;
 				align-items: center;
 				width: 300px;
-				height: 400px;
+				height: 450px;
 				margin: 10px;
 				padding: 10px;
 				border: 1px solid #ccc;
@@ -40,12 +40,15 @@
 				width: 100%;
 				height: 200px;
 				margin-bottom: 10px;
+			
 			}
 			#products ul li .product-image img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				background-color: #fff;
 			}
+			
 			/* style the navigation links in id=site */
 			#site a {
 				color: #000;
@@ -54,6 +57,14 @@
 			#site a:hover {
 				color: #f00;
 			}
+
+			/* add background colour to prduct boxes */
+			#products ul li {
+				background-color: #fff;
+			}
+
+			
+
 		</style>
 	</head>
 	<body>
@@ -92,10 +103,10 @@
 					<ul>
 						<li>
 							<div class="product-image">
-								<img src="images/wine1.jpg" alt="" />
+								<img src="img/earrings1.jpg" alt="" />
 							</div>
 							<div class="product-description" data-name="Hello Kitty Necklace" data-price="5">
-								<h3 class="product-name">Hello Kitty Necklace</h3>
+								<h3 class="product-name">Lolipop Earrings</h3>
 								<p class="product-price">&euro; 5</p>
 								<form class="add-to-cart" action="cart.html" method="get">
 									<div>
@@ -108,10 +119,10 @@
 						</li>
 						<li>
 							<div class="product-image">
-								<img src="images/wine2.jpg" alt="" />
+								<img src="img/earrings2.jpg" alt="" />
 							</div>
 							<div class="product-description" data-name="Necklace #2" data-price="3">
-								<h3 class="product-name">Necklace #2</h3>
+								<h3 class="product-name">Hello Kitty Earrings</h3>
 								<p class="product-price">&euro; 2</p>
 								<form class="add-to-cart" action="cart.html" method="get">
 									<div>
@@ -125,10 +136,10 @@
 
 						<li>
 							<div class="product-image">
-								<img src="images/wine3.jpg" alt="" />
+								<img src="img/earrings3.jpg" alt="" />
 							</div>
 							<div class="product-description" data-name="Roadhog" data-price="11">
-								<h3 class="product-name">Necklace #3</h3>
+								<h3 class="product-name">Heart Earrings</h3>
 								<p class="product-price">&euro; 4</p>
 								<form class="add-to-cart" action="cart.html" method="get">
 									<div>
@@ -139,12 +150,124 @@
 								</form>
 							</div>
 						</li>
+
+						<li>
+							<div class="product-image">
+								<img src="img/earrings4.jpg" alt="" />
+							</div>
+							<div class="product-description" data-name="Necklace #2" data-price="3">
+								<h3 class="product-name">Ice Cream Earrings</h3>
+								<p class="product-price">&euro; 2</p>
+								<form class="add-to-cart" action="cart.html" method="get">
+									<div>
+										<label for="qty-2">Quantity</label>
+										<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+
 					</ul>
 				</div>
 			</div>
 		</div>
+
+
+		<div id="content">
+			<div id="products">
+				<ul>
+					<li>
+						<div class="product-image">
+							<img src="img/earrings5.jpg" alt="" />
+						</div>
+						<div class="product-description" data-name="Hello Kitty Necklace" data-price="5">
+							<h3 class="product-name">Key Earrings</h3>
+							<p class="product-price">&euro; 5</p>
+							<form class="add-to-cart" action="cart.html" method="get">
+								<div>
+									<label for="qty-1">Quantity</label>
+									<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+								</div>
+								<p><input type="submit" value="Add to cart" class="btn" /></p>
+							</form>
+						</div>
+					</li>
+					<li>
+						<div class="product-image">
+							<img src="img/earrings6.jpg" alt="" />
+						</div>
+						<div class="product-description" data-name="Necklace #2" data-price="3">
+							<h3 class="product-name">Game Controller Earrings</h3>
+							<p class="product-price">&euro; 2</p>
+							<form class="add-to-cart" action="cart.html" method="get">
+								<div>
+									<label for="qty-2">Quantity</label>
+									<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+								</div>
+								<p><input type="submit" value="Add to cart" class="btn" /></p>
+							</form>
+						</div>
+					</li>
+
+					<li>
+						<div class="product-image">
+							<img src="img/earrings7.jpg" alt="" />
+						</div>
+						<div class="product-description" data-name="Roadhog" data-price="11">
+							<h3 class="product-name">Turtle Earrings</h3>
+							<p class="product-price">&euro; 4</p>
+							<form class="add-to-cart" action="cart.html" method="get">
+								<div>
+									<label for="qty-3">Quantity</label>
+									<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+								</div>
+								<p><input type="submit" value="Add to cart" class="btn" /></p>
+							</form>
+						</div>
+					</li>
+
+					<li>
+						<div class="product-image">
+							<img src="img/earrings8.jpg" alt="" />
+						</div>
+						<div class="product-description" data-name="Necklace #2" data-price="3">
+							<h3 class="product-name">Sunflower Earrings</h3>
+							<p class="product-price">&euro; 2</p>
+							<form class="add-to-cart" action="cart.html" method="get">
+								<div>
+									<label for="qty-2">Quantity</label>
+									<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+								</div>
+								<p><input type="submit" value="Add to cart" class="btn" /></p>
+							</form>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
 		<footer id="site-info">
-				Copyright &copy; Winery
+				<div>
+					<img src="img/icons8-facebook-48.png" alt="" onclick="onclickAlert()">
+					<img src="img/icons8-instagram-48.png" alt="" onclick="onclickAlert()">
+					<img src="img/icons8-twitter-48.png" alt="" onclick="onclickAlert()">
+				</div>
+				<p>&copy; 2023 Jasmine Jewelry Shop. All rights reserved.</p>
+			
+			
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SY35FZCDLS"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	
+		gtag('config', 'G-SY35FZCDLS');
+		</script>
+
+
 		</footer>
 
 		<!-- Optional JavaScript -->
