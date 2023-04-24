@@ -447,7 +447,11 @@ footer div * {
 
 
 
+/*ABOUT US PAGE START */
 
+.sky{
+  object-fit: cover;
+}
 
 
 
