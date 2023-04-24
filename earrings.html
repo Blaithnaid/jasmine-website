@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jasmine | Shop: Earrings</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.shop.js"></script>
+		<script src="js/logo.js" defer></script>
+		<style>
+			/* Convert the unordered list into a flexbox */
+			#products ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			/* Convert the list items into flexboxes */
+			#products ul li {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				width: 300px;
+				height: 400px;
+				margin: 10px;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-shadow: 0 0 5px #ccc;
+			}
+			/* Style the product image */
+			#products ul li .product-image {
+				width: 100%;
+				height: 200px;
+				margin-bottom: 10px;
+			}
+			#products ul li .product-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			/* style the navigation links in id=site */
+			#site a {
+				color: #000;
+				text-decoration: none;
+			}
+			#site a:hover {
+				color: #f00;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="img/logo.png" width="50" height="50" id="sitelogo" alt="Site logo" onmouseover="logoSpin()" onmouseout="logoStop()">
+            <p><b>Jasmine</b></p>
+            <ul>
+                <a href="index.html" id="currentPage"><li>Home</li></a>
+                <a href="shop.html"><li>Shop</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="aboutus.html"><li>About Us</li></a>
+				<select name="country" id="country">
+					<option value="Region">Region</option>
+					<option value="United Kingdom">United Kingdom</option>
+					<option value="Ireland">Ireland</option>
+					<option value="Europe">Europe</option>
+					<option value="North America">North America</option>
+				</select>
+            </ul>
+        </header>
+		<div id="site">
+			<!-- add two links to other categories of page to left and right below header -->
+			<div id="left">
+				<a href="shop.html">Back to Shop</a>
+			</div>
+			<div id="right">
+				<a href="bracelets.html">Next Category: Bracelets</a>
+			</div>
+			<!-- add a link to the cart page to the top right of the page -->
+			<div id="cart">
+				<a href="cart.html">Cart</a>
+			</div>
+			
+			<div id="content">
+				<div id="products">
+					<ul>
+						<li>
+							<div class="product-image">
+								<img src="images/wine1.jpg" alt="" />
+							</div>
+							<div class="product-description" data-name="Hello Kitty Necklace" data-price="5">
+								<h3 class="product-name">Hello Kitty Necklace</h3>
+								<p class="product-price">&euro; 5</p>
+								<form class="add-to-cart" action="cart.html" method="get">
+									<div>
+										<label for="qty-1">Quantity</label>
+										<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+						<li>
+							<div class="product-image">
+								<img src="images/wine2.jpg" alt="" />
+							</div>
+							<div class="product-description" data-name="Necklace #2" data-price="3">
+								<h3 class="product-name">Necklace #2</h3>
+								<p class="product-price">&euro; 2</p>
+								<form class="add-to-cart" action="cart.html" method="get">
+									<div>
+										<label for="qty-2">Quantity</label>
+										<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+
+						<li>
+							<div class="product-image">
+								<img src="images/wine3.jpg" alt="" />
+							</div>
+							<div class="product-description" data-name="Roadhog" data-price="11">
+								<h3 class="product-name">Necklace #3</h3>
+								<p class="product-price">&euro; 4</p>
+								<form class="add-to-cart" action="cart.html" method="get">
+									<div>
+										<label for="qty-3">Quantity</label>
+										<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer id="site-info">
+				Copyright &copy; Winery
+		</footer>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script>$(document).ready(function(){ $("h1").addClass("animated bounce"); });</script>
+	</body>
+</html>	
