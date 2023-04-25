@@ -36,5 +36,21 @@ function subscribe(){
 }
 
 
+// parallex effect on about us page
+const text = document.querySelector('#textaboutus');
+const image = document.querySelector('#imageaboutus');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.pageYOffset;
+  const textY = text.offsetTop;
+  const imageY = image.offsetTop;
+  const textSpeed = 0.5;
+  const imageSpeed = 0.2;
+
+  text.style.transform = `translateY(${scrollY * textSpeed}px)`;
+  image.style.transform = `translateY(${(scrollY - imageY) * imageSpeed}px)`;
+});
+
+
 
 
