@@ -10,79 +10,6 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.shop.js"></script>
 		<script src="js/logo.js" defer></script>
-		<style>
-			/* Convert the unordered list into a flexbox */
-			#products ul {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				list-style: none;
-				padding: 0;
-				margin: 0;
-			}
-			/* Convert the list items into flexboxes */
-			#products ul li {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				align-items: center;
-				width: 300px;
-				height: 510px;
-				margin: 10px;
-				padding: 10px;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-				box-shadow: 0 0 5px #ccc;
-				background-color: #fff;
-			}
-			/* Style the product image */
-			#products ul li .product-image {
-				width: 100%;
-				height: 100%;
-				margin-bottom: 10px;
-			
-			}
-			#products ul li .product-image img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				background-color: #fff;
-			}
-			
-			/* style the navigation links in id=site */
-			#site a {
-				color: #000;
-				text-decoration: none;
-			}
-			#site a:hover {
-				color: #f00;
-			}
-			/* style category-switcher */
-			.category-switcher {
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				align-items: center;
-				width: 100%;
-				height: 50px;
-				margin: 0;
-				margin-top: 10px;
-				padding: 10px;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-				box-shadow: 0 0 5px #ccc;
-				background-color: #fff;
-			}
-				/* product name */
-			#products ul li .product-name {
-				font-size: 1.2em;
-				font-weight: bold;
-				margin: 0;
-				padding: 0;
-				text-align: center;
-			}
-		</style>
 	</head>
 	<body>
 		<header>
@@ -179,7 +106,72 @@
 								</form>
 							</div>
 						</li>
-
+						<li>
+							<div class="product-image">
+								<img src="img/earrings5.jpg" alt="" />
+							</div>
+							<div class="product-description" data-name="Key Earrings" data-price="5">
+								<h3 class="product-name">Key Earrings</h3>
+								<p class="product-price">&euro; 5</p>
+								<form class="add-to-cart" action="cart.html" method="get">
+									<div>
+										<label for="qty-5">Quantity</label>
+										<input type="text" name="qty-5" id="qty-5" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+						<li>
+							<div class="product-image">
+								<img src="img/earrings6.jpg" alt="" />
+							</div>
+							<div class="product-description" data-name="Game Controller Earrings" data-price="3">
+								<h3 class="product-name">Game Controller Earrings</h3>
+								<p class="product-price">&euro; 6</p>
+								<form class="add-to-cart" action="cart.html" method="get">
+									<div>
+										<label for="qty-6">Quantity</label>
+										<input type="text" name="qty-6" id="qty-6" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+	
+						<li>
+							<div class="product-image">
+								<img src="img/earrings7.jpg" alt="" />
+							</div>
+							<div class="product-description" data-name="Turtle Earrings" data-price="11">
+								<h3 class="product-name">Turtle Earrings</h3>
+								<p class="product-price">&euro; 5</p>
+								<form class="add-to-cart" action="cart.html" method="get">
+									<div>
+										<label for="qty-7">Quantity</label>
+										<input type="text" name="qty-7" id="qty-7" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+	
+						<li>
+							<div class="product-image">
+								<img src="img/earrings8.jpg" alt="" />
+							</div>
+							<div class="product-description" data-name="Sunflower Earrings" data-price="3">
+								<h3 class="product-name">Sunflower Earrings</h3>
+								<p class="product-price">&euro; 6</p>
+								<form class="add-to-cart" action="cart.html" method="get">
+									<div>
+										<label for="qty-8">Quantity</label>
+										<input type="text" name="qty-8" id="qty-8" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -189,72 +181,7 @@
 		<div id="content">
 			<div id="products">
 				<ul>
-					<li>
-						<div class="product-image">
-							<img src="img/earrings5.jpg" alt="" />
-						</div>
-						<div class="product-description" data-name="Key Earrings" data-price="5">
-							<h3 class="product-name">Key Earrings</h3>
-							<p class="product-price">&euro; 5</p>
-							<form class="add-to-cart" action="cart.html" method="get">
-								<div>
-									<label for="qty-5">Quantity</label>
-									<input type="text" name="qty-5" id="qty-5" class="qty" value="1" />
-								</div>
-								<p><input type="submit" value="Add to cart" class="btn" /></p>
-							</form>
-						</div>
-					</li>
-					<li>
-						<div class="product-image">
-							<img src="img/earrings6.jpg" alt="" />
-						</div>
-						<div class="product-description" data-name="Game Controller Earrings" data-price="3">
-							<h3 class="product-name">Game Controller Earrings</h3>
-							<p class="product-price">&euro; 6</p>
-							<form class="add-to-cart" action="cart.html" method="get">
-								<div>
-									<label for="qty-6">Quantity</label>
-									<input type="text" name="qty-6" id="qty-6" class="qty" value="1" />
-								</div>
-								<p><input type="submit" value="Add to cart" class="btn" /></p>
-							</form>
-						</div>
-					</li>
-
-					<li>
-						<div class="product-image">
-							<img src="img/earrings7.jpg" alt="" />
-						</div>
-						<div class="product-description" data-name="Turtle Earrings" data-price="11">
-							<h3 class="product-name">Turtle Earrings</h3>
-							<p class="product-price">&euro; 5</p>
-							<form class="add-to-cart" action="cart.html" method="get">
-								<div>
-									<label for="qty-7">Quantity</label>
-									<input type="text" name="qty-7" id="qty-7" class="qty" value="1" />
-								</div>
-								<p><input type="submit" value="Add to cart" class="btn" /></p>
-							</form>
-						</div>
-					</li>
-
-					<li>
-						<div class="product-image">
-							<img src="img/earrings8.jpg" alt="" />
-						</div>
-						<div class="product-description" data-name="Necklace #2" data-price="3">
-							<h3 class="product-name">Sunflower Earrings</h3>
-							<p class="product-price">&euro; 6</p>
-							<form class="add-to-cart" action="cart.html" method="get">
-								<div>
-									<label for="qty-2">Quantity</label>
-									<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-								</div>
-								<p><input type="submit" value="Add to cart" class="btn" /></p>
-							</form>
-						</div>
-					</li>
+					
 
 				</ul>
 			</div>
