@@ -21,17 +21,158 @@
             </ul>
         </header>
 
+        
+            <section id="textaboutus">
+              <h1>How Jasmine Jewellery Started</h1>
+              <p>Jasmine Jewellery was previously a jewellery shop made by Louiza, called "Louizaverse"
+                It was made as a small business on depop and Etsy to sell handmade bracelets, necklaces, earrings and other
+                pieces of artwork, such as stickers, paintings, tote bags etc.</p>
+            </section>
+          
+            <section id="imageaboutus">
+              <img src="img/customerPACKAGE2.jpg" alt="Parallax Image">
+            </section>
+          
 
-        <p>blah blah blah
-            our story
-            how we started
-            etc
-        </p>
+          <style>
+          body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: linear-gradient(to bottom, #87CEFA, #FFFFFF);
+            font-family: 'Roboto', sans-serif;
+            }
 
-        <section id="">
-        <img src="img/skybackground.jpeg" id="sky">
-        </section>
+        
+          
+          #textaboutus {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #fff;
+            padding-top: 150px;
+          }
+          
+          #textaboutus h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+          }
+          
+            #textaboutus p {
+                font-size: 1.5em;
+                width: 50%;
+                text-align: center;
+                margin: 0;
+            }
+          
+          #imageaboutus {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+          }
+          
+          #imageaboutus img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            height: 170%;
+            width: auto;
+            z-index: -1;
+          }
+          </style>
 
+
+            <section id="text1">
+                <h1>First Creations</h1>
+                <p>We first starting trying to draw designs up on procreate on an iPad, and then decided to print those images 
+                    onto tote bags and stickers. The jewellery aspect started when we decided to make earrings for our own personal use,
+                    but after getting charms and beads from a local craft shop, we decided to make bracelets and necklaces as well. When 
+                    we had enough pieces, we decided to sell them on depop and Etsy.
+                </p>
+            </section>
+            
+            <section id="parallax">
+                <div id="parallax-text">
+                <h2>Tote Bag Designs</h2>
+                </div>
+                <div id="parallax-images">
+                <img src="img/STRWBERRYTOTESTOCK.JPG" alt="Image 1">
+                <img src="img/totebagstockimg.JPG" alt="Image 2">
+                </div>
+            </section>
+            
+            <section id="text2">
+                <h1>Made by Louiza Moran and Iarla Burke</h1>
+                <p>Enjoy our shop and items! Happy Shopping.</p>
+            </section>
+            
+            <style>
+                #text1, #text2 {
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                }
+            
+                #parallax {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-image: url("img/parallax-background.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                color: #000;
+                }
+            
+                #parallax-text {
+                margin: 2rem;
+                text-align: center;
+                }
+            
+                #parallax-images {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            
+                #parallax-images img {
+                width: 50%;
+                margin: 0 1rem;
+                }
+            
+                #text2 {
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                }
+            </style>
+  
+          
+          <script>
+            const text = document.querySelector('#textaboutus');
+            const image = document.querySelector('#imageaboutus');
+          
+            window.addEventListener('scroll', () => {
+              const scrollY = window.pageYOffset;
+              const textY = text.offsetTop;
+              const imageY = image.offsetTop;
+              const textSpeed = 0.5;
+              const imageSpeed = 0.2;
+          
+              text.style.transform = `translateY(${scrollY * textSpeed}px)`;
+              image.style.transform = `translateY(${(scrollY - imageY) * imageSpeed}px)`;
+            });
+          </script>
+              
         <footer>
 			<div>
 				<img src="img/icons8-facebook-48.png" alt="" onclick="onclickAlert()">
