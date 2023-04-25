@@ -34,6 +34,7 @@
 				border: 1px solid #ccc;
 				border-radius: 5px;
 				box-shadow: 0 0 5px #ccc;
+				background-color: #fff;
 			}
 			/* Style the product image */
 			#products ul li .product-image {
@@ -57,14 +58,22 @@
 			#site a:hover {
 				color: #f00;
 			}
-
-			/* add background colour to prduct boxes */
-			#products ul li {
+			/* style category-switcher */
+			.category-switcher {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				height: 50px;
+				margin: 0;
+				margin-top: 10px;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-shadow: 0 0 5px #ccc;
 				background-color: #fff;
 			}
-
-			
-
 		</style>
 	</head>
 	<body>
@@ -87,17 +96,12 @@
         </header>
 		<div id="site">
 			<!-- add two links to other categories of page to left and right below header -->
-			<div id="left">
-				<a href="shop.html">Back to Shop</a>
-			</div>
-			<div id="right">
-				<a href="bracelets.html">Next Category: Bracelets</a>
+			<div class="category-switcher">
+				<a href="necklaces.html"><b>&lt; Necklaces</b></a>
+				<a href="cart.html"><u>🛒 Cart</u></a>
+				<a href="bracelets.html"><b>Bracelets &gt;</b></a>
 			</div>
 			<!-- add a link to the cart page to the top right of the page -->
-			<div id="cart">
-				<a href="cart.html">Cart</a>
-			</div>
-			
 			<div id="content">
 				<div id="products">
 					<ul>
