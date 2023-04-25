@@ -13,66 +13,76 @@
 
 		<style>
 			/* Convert the unordered list into a flexbox */
-		#products ul {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
-		/* Convert the list items into flexboxes */
-		#products ul li {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: center;
-			width: 300px;
-			height: 520px;
-			margin: 10px;
-			padding: 10px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			box-shadow: 0 0 5px #ccc;
-		}
-		/* Style the product image */
-		#products ul li .product-image {
-			width: 100%;
-			height: 100%;
-			margin-bottom: 10px;
-		
-		}
-		#products ul li .product-image img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			background-color: #fff;
-		}
-		
-		/* style the navigation links in id=site */
-		#site a {
-			color: #000;
-			text-decoration: none;
-		}
-		#site a:hover {
-			color: #f00;
-		}
-
-		/* add background colour to prduct boxes */
-		#products ul li {
-			background-color: #fff;
-		}
-
-			/* product name */
+			#products ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			/* Convert the list items into flexboxes */
+			#products ul li {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				width: 300px;
+				height: 510px;
+				margin: 10px;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-shadow: 0 0 5px #ccc;
+				background-color: #fff;
+			}
+			/* Style the product image */
+			#products ul li .product-image {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 10px;
+			
+			}
+			#products ul li .product-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				background-color: #fff;
+			}
+			
+			/* style the navigation links in id=site */
+			#site a {
+				color: #000;
+				text-decoration: none;
+			}
+			#site a:hover {
+				color: #f00;
+			}
+			/* style category-switcher */
+			.category-switcher {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				height: 50px;
+				margin: 0;
+				margin-top: 10px;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-shadow: 0 0 5px #ccc;
+				background-color: #fff;
+			}
+				/* product name */
 			#products ul li .product-name {
-			font-size: 1.2em;
-			font-weight: bold;
-			margin: 0;
-			padding: 0;
-			text-align: center;
-		}
-
+				font-size: 1.2em;
+				font-weight: bold;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
 		</style>
 
 	</head>
@@ -99,6 +109,12 @@
             </ul>
         </header>
 		<div id="content">
+			<!-- add two links to other categories of page to left and right below header -->
+			<div class="category-switcher">
+				<a href="bracelets.html"><b>&lt; Bracelets</b></a>
+				<a href="cart.html"><u>🛒 Cart</u></a>
+				<a href="earrings.html"><b>Earrings &gt;</b></a>
+			</div>
 			<div id="products">
 				<ul>
 					<li>

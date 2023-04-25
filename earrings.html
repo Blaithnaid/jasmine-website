@@ -28,7 +28,7 @@
 				justify-content: space-between;
 				align-items: center;
 				width: 300px;
-				height: 450px;
+				height: 510px;
 				margin: 10px;
 				padding: 10px;
 				border: 1px solid #ccc;
@@ -39,7 +39,7 @@
 			/* Style the product image */
 			#products ul li .product-image {
 				width: 100%;
-				height: 200px;
+				height: 100%;
 				margin-bottom: 10px;
 			
 			}
@@ -75,16 +75,13 @@
 				background-color: #fff;
 			}
 				/* product name */
-		#products ul li .product-name {
-			font-size: 1.2em;
-			font-weight: bold;
-			margin: 0;
-			padding: 0;
-			text-align: center;
-		}
-
-			
-
+			#products ul li .product-name {
+				font-size: 1.2em;
+				font-weight: bold;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
@@ -120,7 +117,7 @@
 							<div class="product-image">
 								<img src="img/earrings1.jpg" alt="" />
 							</div>
-							<div class="product-description" data-name="Hello Kitty Necklace" data-price="5">
+							<div class="product-description" data-name="Lolipop Earrings" data-price="5">
 								<h3 class="product-name">Lolipop Earrings</h3>
 								<p class="product-price">&euro; 5</p>
 								<form class="add-to-cart" action="cart.html" method="get">
@@ -136,9 +133,9 @@
 							<div class="product-image">
 								<img src="img/earrings2.jpg" alt="" />
 							</div>
-							<div class="product-description" data-name="Necklace #2" data-price="3">
+							<div class="product-description" data-name="Hello Kitty Earrings" data-price="3">
 								<h3 class="product-name">Hello Kitty Earrings</h3>
-								<p class="product-price">&euro; 5</p>
+								<p class="product-price">&euro; 3</p>
 								<form class="add-to-cart" action="cart.html" method="get">
 									<div>
 										<label for="qty-2">Quantity</label>
@@ -153,9 +150,9 @@
 							<div class="product-image">
 								<img src="img/earrings3.jpg" alt="" />
 							</div>
-							<div class="product-description" data-name="Roadhog" data-price="11">
+							<div class="product-description" data-name="Heart Earrings" data-price="11">
 								<h3 class="product-name">Heart Earrings</h3>
-								<p class="product-price">&euro; 6</p>
+								<p class="product-price">&euro; 11</p>
 								<form class="add-to-cart" action="cart.html" method="get">
 									<div>
 										<label for="qty-3">Quantity</label>
@@ -170,13 +167,13 @@
 							<div class="product-image">
 								<img src="img/earrings4.jpg" alt="" />
 							</div>
-							<div class="product-description" data-name="Necklace #2" data-price="3">
+							<div class="product-description" data-name="Ice Cream Earrings" data-price="3">
 								<h3 class="product-name">Ice Cream Earrings</h3>
 								<p class="product-price">&euro; 6</p>
 								<form class="add-to-cart" action="cart.html" method="get">
 									<div>
-										<label for="qty-2">Quantity</label>
-										<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+										<label for="qty-4">Quantity</label>
+										<input type="text" name="qty-4" id="qty-4" class="qty" value="1" />
 									</div>
 									<p><input type="submit" value="Add to cart" class="btn" /></p>
 								</form>
@@ -196,13 +193,13 @@
 						<div class="product-image">
 							<img src="img/earrings5.jpg" alt="" />
 						</div>
-						<div class="product-description" data-name="Hello Kitty Necklace" data-price="5">
+						<div class="product-description" data-name="Key Earrings" data-price="5">
 							<h3 class="product-name">Key Earrings</h3>
 							<p class="product-price">&euro; 5</p>
 							<form class="add-to-cart" action="cart.html" method="get">
 								<div>
-									<label for="qty-1">Quantity</label>
-									<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+									<label for="qty-5">Quantity</label>
+									<input type="text" name="qty-5" id="qty-5" class="qty" value="1" />
 								</div>
 								<p><input type="submit" value="Add to cart" class="btn" /></p>
 							</form>
@@ -212,13 +209,13 @@
 						<div class="product-image">
 							<img src="img/earrings6.jpg" alt="" />
 						</div>
-						<div class="product-description" data-name="Necklace #2" data-price="3">
+						<div class="product-description" data-name="Game Controller Earrings" data-price="3">
 							<h3 class="product-name">Game Controller Earrings</h3>
 							<p class="product-price">&euro; 6</p>
 							<form class="add-to-cart" action="cart.html" method="get">
 								<div>
-									<label for="qty-2">Quantity</label>
-									<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+									<label for="qty-6">Quantity</label>
+									<input type="text" name="qty-6" id="qty-6" class="qty" value="1" />
 								</div>
 								<p><input type="submit" value="Add to cart" class="btn" /></p>
 							</form>
@@ -229,13 +226,13 @@
 						<div class="product-image">
 							<img src="img/earrings7.jpg" alt="" />
 						</div>
-						<div class="product-description" data-name="Roadhog" data-price="11">
+						<div class="product-description" data-name="Turtle Earrings" data-price="11">
 							<h3 class="product-name">Turtle Earrings</h3>
 							<p class="product-price">&euro; 5</p>
 							<form class="add-to-cart" action="cart.html" method="get">
 								<div>
-									<label for="qty-3">Quantity</label>
-									<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+									<label for="qty-7">Quantity</label>
+									<input type="text" name="qty-7" id="qty-7" class="qty" value="1" />
 								</div>
 								<p><input type="submit" value="Add to cart" class="btn" /></p>
 							</form>
