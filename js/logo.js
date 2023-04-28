@@ -51,6 +51,12 @@ window.addEventListener('scroll', () => {
   image.style.transform = `translateY(${(scrollY - imageY) * imageSpeed}px)`;
 });
 
+window.addEventListener("scroll", function(){
+  let offset = window.pageYOffset;
+  let parallax = document.querySelector(".parallax-content");
+  parallax.style.transform = `translateY(${offset * 0.4}px)`;
+});
+
 
 
 

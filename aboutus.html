@@ -19,88 +19,63 @@
                 <a href="contact.html"><li>Contact</li></a>
                 <a href="aboutus.html" id="currentPage"><li>About Us</li></a>
             </ul>
-        </header>
+          </header>
 
+        <section class="parallax">
+          <div class="parallax-content"></div>
+        </section>
         
-            <section id="textaboutus">
-              <h1>How Jasmine Jewellery Started</h1>
-              <p>Jasmine Jewellery was previously a jewellery shop made by Louiza, called "Louizaverse"
-                It was made as a small business on depop and Etsy to sell handmade bracelets, necklaces, earrings and other
-                pieces of artwork, such as stickers, paintings, tote bags etc.</p>
-            </section>
-          
-            <section id="imageaboutus">
-              <img src="img/customerPACKAGE2.jpg" alt="Parallax Image">
-            </section>
-          
 
-          <style>
-          body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background: linear-gradient(to bottom, #87CEFA, #FFFFFF);
-            font-family: 'Roboto', sans-serif;
-            }
+                <style>
+              .parallax {
+          position: relative;
+          height: 400px;
+        }
 
+        .parallax-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 85%;
+          background-image: url("img/jasminejewelleryheader.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          opacity: 1;
+        } 
+
+        </style>
+
+        <script>
+          window.addEventListener("scroll", function(){
+          let offset = window.pageYOffset;
+          let parallax = document.querySelector(".parallax-content");
+          parallax.style.transform = `translateY(${offset * 0.4}px)`;
+        });
+
+
+        </script>
         
-          
-          #textaboutus {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            background-color: #fff;
-            padding-top: 150px;
-          }
-          
-          #textaboutus h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-          }
-          
-            #textaboutus p {
-                font-size: 1.5em;
-                width: 50%;
-                text-align: center;
-                margin: 0;
-            }
-          
-          #imageaboutus {
-            height: 100vh;
-            overflow: hidden;
-            position: relative;
-          }
-          
-          #imageaboutus img {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            height: 170%;
-            width: auto;
-            z-index: -1;
-          }
-          </style>
-
+        
 
             <section id="text1">
                 <h1>First Creations</h1>
                 <p>We first starting trying to draw designs up on procreate on an iPad, and then decided to print those images 
                     onto tote bags and stickers. The jewellery aspect started when we decided to make earrings for our own personal use,
                     but after getting charms and beads from a local craft shop, we decided to make bracelets and necklaces as well. When 
-                    we had enough pieces, we decided to sell them on depop and Etsy.
+                    we had enough pieces, we decided to sell them on depop and Etsy. Before we knew it we were growing and sending packages
+                    internationally.
                 </p>
             </section>
             
             <section id="parallax">
                 <div id="parallax-text">
-                <h2>Tote Bag Designs</h2>
+                <h2>First Designs</h2>
                 </div>
                 <div id="parallax-images">
                 <img src="img/STRWBERRYTOTESTOCK.JPG" alt="Image 1">
-                <img src="img/totebagstockimg.JPG" alt="Image 2">
+                <img src="img/cowbottlecap.jpg" alt="Image 2">
                 </div>
             </section>
             
